@@ -1,0 +1,127 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab4_Counters_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FTN/LPRS1_01/Lab4_Counters/lab4_counters.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:16:33 on Jan 16,2023
+# vcom -reportprogress 300 -93 -work work D:/FTN/LPRS1_01/Lab4_Counters/lab4_counters.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity lab4_counters
+# -- Compiling architecture lab4_counters_arch of lab4_counters
+# End time: 11:16:33 on Jan 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/FTN/LPRS1_01/Lab4_Counters/lab4_counters_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:16:33 on Jan 16,2023
+# vcom -reportprogress 300 -93 -work work D:/FTN/LPRS1_01/Lab4_Counters/lab4_counters_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lab4_counters_tb
+# -- Compiling architecture lab4_counters_tb_arch of lab4_counters_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading entity lab4_counters
+# End time: 11:16:33 on Jan 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  lab4_counters_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" lab4_counters_tb 
+# Start time: 11:16:33 on Jan 16,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.lab4_counters_tb(lab4_counters_tb_arch)
+# Loading work.lab4_counters(lab4_counters_arch)
+# 
+# do D:/FTN/LPRS1_01/Lab4_Counters/lab4_counters_tb_run.do
+# 
+# set wf lab4_counters_tb_wave.do
+# lab4_counters_tb_wave.do
+# 
+# restart -force
+# delete wave *
+# 
+# All is relative to simulation/modelsim/
+# if {[file exists wave.do]} {
+# 	file delete ../../$wf
+# 	file copy wave.do ../../$wf
+# }
+# 
+# do $wf
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /lab4_counters_tb/i_clk
+# add wave -noupdate /lab4_counters_tb/in_rst
+# add wave -noupdate /lab4_counters_tb/o_led
+# add wave -noupdate /lab4_counters_tb/uut/digit_sel
+# add wave -noupdate -radix unsigned /lab4_counters_tb/uut/digit_0
+# add wave -noupdate -radix unsigned /lab4_counters_tb/uut/digit_1
+# add wave -noupdate -radix unsigned /lab4_counters_tb/uut/digit_2
+# add wave -noupdate -radix unsigned /lab4_counters_tb/uut/digit_3
+# add wave -noupdate -divider {config digits}
+# add wave -noupdate /lab4_counters_tb/uut/i_pb_up
+# add wave -noupdate /lab4_counters_tb/uut/prev_pb_up
+# add wave -noupdate /lab4_counters_tb/uut/prev_prev_pb_up
+# add wave -noupdate /lab4_counters_tb/uut/re_pb_up
+# add wave -noupdate /lab4_counters_tb/uut/sDEC
+# add wave -noupdate /lab4_counters_tb/uut/sSEL0
+# ** Error: (vish-4014) No objects found matching '/lab4_counters_tb/uut/sSEL0'.
+# Executing ONERROR command at macro D:/FTN/LPRS1_01/Lab4_Counters/lab4_counters_tb_wave.do line 17
+# add wave -noupdate -radix unsigned /lab4_counters_tb/uut/sCNT_120K
+# add wave -noupdate -divider run/config
+# add wave -noupdate /lab4_counters_tb/uut/i_pb_center
+# add wave -noupdate /lab4_counters_tb/uut/s_run
+# add wave -noupdate /lab4_counters_tb/uut/re_pb_center
+# add wave -noupdate -divider cnt0
+# add wave -noupdate /lab4_counters_tb/uut/sTC0
+# add wave -noupdate -radix unsigned /lab4_counters_tb/uut/sCNT0
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {13025027 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 251
+# configure wave -valuecolwidth 62
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {0 ps} {42 us}
+# 
+# Ignoring uninitialized signals warnings before reset activated.
+# set StdArithNoWarnings 1
+# 1
+# set NumericStdNoWarnings 1
+# 1
+# run 1ps
+# set StdArithNoWarnings 0
+# 0
+# set NumericStdNoWarnings 0
+# 0
+# 
+# run 30 us
+# End time: 11:16:44 on Jan 16,2023, Elapsed time: 0:00:11
+# Errors: 3, Warnings: 0
